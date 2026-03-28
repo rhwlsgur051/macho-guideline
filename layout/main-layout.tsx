@@ -7,7 +7,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
     const router = useRouter();
     const isDetailPage = pathname !== '/' && pathname !== '/main';
 
-    return <div className="relative">
+    return <div className={`relative ${isDetailPage && 'p-6'}`}>
         {children}
         {isDetailPage &&
             <button type="button" onClick={() => router.push('/main')} className="fixed top-8 right-6">

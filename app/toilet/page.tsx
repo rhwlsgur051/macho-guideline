@@ -9,7 +9,7 @@ import matdongsandescriptionImg from "@/public/matdongsan-description.svg"
 import Image from "next/image"
 
 const ToiletPage = () => {
-    return <div className="p-6">
+    return <div>
         {PageTitleComponent('마초의 똥간을 챙겨줘', '화장실 청소')}
         <div className="flex flex-col gap-8">
             <ToiletBox title="감자를 캐보자!" titleImg={potatoImg} descriptionImg={potatoDescriptionImg} youtubeVideoId="lv8loCUPev0" />
