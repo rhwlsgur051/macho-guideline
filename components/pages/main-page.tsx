@@ -1,5 +1,7 @@
 'use client';
+import { useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
+import { HeartRainOverlay } from "../effects/heart-rain-overlay";
 import { FeedingGuideBtn } from "../icons/feeding-guide-btn";
 import { ToiletGuideBtn } from "../icons/toilet-guide-btn";
 import { PlayGuideBtn } from "../icons/play-guide-btn";
@@ -11,14 +13,16 @@ export const MainPageComponent = () => {
     <MainHeader />
 
     {/* 우리집 사용설명서 */}
-    <div className="bg-[#aaa] p-4 pl-7 rounded-[14px] flex gap-4">
-      <img src="/images/main/home-w.svg" alt="macho-timetable" className="w-[60px]" />
-      <div className="flex flex-col justify-center mr-10">
-        <div className="font-semibold text-[14px] text-[#444] mb-1">우리집 사용설명서</div>
-        <div className="text-[10px] text-[#444]">지내는 동안 집에 관련된 정보들</div>
+    <div className="bg-[#aaa] py-4 pl-7 pr-0 rounded-[14px] flex">
+      <div className="flex gap-4 mr-15">
+        <img src="/images/main/home-w.svg" alt="macho-timetable" className="w-[60px]" />
+        <div className="flex flex-col justify-center">
+          <div className="font-semibold text-[14px] text-[#444] mb-1">우리집 사용설명서</div>
+          <div className="text-[10px] text-[#444]">지내는 동안 집에 관련된 정보들</div>
+        </div>
       </div>
       <button
-        className="bg-[#444] text-white rounded-full w-[40px] h-[40px] flex self-center items-center justify-center active:bg-[#ef7d40]"
+        className="bg-[#444] text-white rounded-full w-[40px] h-[40px] flex self-center items-center justify-center active:bg-[#888]"
         onClick={() => routner.push('/home-guide')}>
         <img src="/images/right-arrow-w.svg" alt="right-arrow" className="w-[12px] h-[12px]" />
       </button>
@@ -50,7 +54,7 @@ export const MainPageComponent = () => {
         <p className="text-[11px] font-bold text-[#eb6530]">마초의 최애 인간이 되고 싶나요? 터치!</p>
       </div>
       <button
-        className="bg-[#ef7d40] text-white rounded-full w-[40px] h-[40px] flex items-center justify-center active:bg-[#ef7d40]"
+        className="relative right-2 bg-[#ef7d40] text-white rounded-full w-[40px] h-[40px] flex items-center justify-center active:bg-[#fdeadb]"
         onClick={() => routner.push('/fna')}>
         <img src="/images/right-arrow-w.svg" alt="right-arrow" className="w-[12px] h-[12px]" />
       </button>
@@ -59,13 +63,32 @@ export const MainPageComponent = () => {
 }
 
 const MainHeader = () => {
-  return <div className="flex justify-between mb-2">
-    <div className="text-[20px]">
-      <p><b>안녕, 창수 삼촌.</b></p>
-      <p>우리집을 소개할게요!</p>
+  const [heartBurstId, setHeartBurstId] = useState(0);
+  const endHeartRain = useCallback(() => setHeartBurstId(0), []);
+
+  const heartBurst = () => {
+    setHeartBurstId((id) => id + 1);
+  };
+
+  return (
+    <div className="flex justify-between mb-2">
+      {heartBurstId > 0 && (
+        <HeartRainOverlay key={heartBurstId} onComplete={endHeartRain} />
+      )}
+      <div className="text-[20px]">
+        <p><b>안녕, 창수 삼촌.</b></p>
+        <p>우리집을 소개할게요!</p>
+      </div>
+      <div>
+        <img
+          onClick={() => {
+            heartBurst();
+          }}
+          src="/images/guest/chang-su.svg"
+          alt="guest"
+          className="w-[60px] cursor-pointer"
+        />
+      </div>
     </div>
-    <div>
-      <img src="/images/guest/chang-su.svg" alt="guest" className="w-[60px]" />
-    </div>
-  </div>
-}
+  );
+};

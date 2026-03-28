@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 const defaultFootprintList = [
     {
-        className: "right-4 bottom-5 w-[100px] z-10",
+        className: "right-5 bottom-5 w-[100px] z-10",
         show: false,
     },
     {
@@ -43,7 +43,8 @@ export const IntroPageComponent = () => {
     }, [])
 
     return <div className="bg-[#ef7d40] w-[100vw] h-[100vh] relative overflow-hidden">
-        <div className="overflow-hidden relative h-[50vh]">
+        {/* 주황색 영역 */}
+        <div className="overflow-hidden relative h-[58vh]">
             <div className="absolute top-20 left-8 font-bold">
                 <div className="text-white text-3xl">MACHO</div>
                 <div className="text-white text-1xl">Care Guide</div>
@@ -53,9 +54,10 @@ export const IntroPageComponent = () => {
             {footprintList.map((footprint, index) => (
                 <img key={`footprint-` + index} src="/images/intro/footprint.svg" alt="footprint" className={`absolute ${footprint.className}`} style={{ display: footprint.show ? 'block' : 'none' }} />
             ))}
-
         </div>
-        <div className="top-[-60px] w-[700px] translate-x-[-150px] h-[calc(50vh+60px)] flex justify-center relative bg-white rounded-t-[50%]">
+
+        {/* 흰색 영역 */}
+        <div className="top-[-60px] w-[700px] translate-x-[-150px] h-[calc(42vh+60px)] flex justify-center relative bg-white rounded-t-[50%]">
             <div className="flex flex-col">
                 <div className="pt-12 font-bold text-center text-[26px] mb-7">
                     <div>
