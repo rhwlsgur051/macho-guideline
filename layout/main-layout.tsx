@@ -7,10 +7,10 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
     const router = useRouter();
     const isDetailPage = pathname !== '/' && pathname !== '/main';
 
-    return <div>
+    return <div className="relative">
         {children}
         {isDetailPage &&
-            <button type="button" onClick={() => router.push('/main')} className="absolute top-5 right-6">
+            <button type="button" onClick={() => router.push('/main')} className="fixed top-8 right-6">
                 <img src="/home-icon.svg" alt="home" className="w-13 h-13" />
             </button>
         }

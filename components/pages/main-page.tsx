@@ -18,7 +18,7 @@ export const MainPageComponent = () => {
         <div className="text-[10px] text-[#444]">지내는 동안 집에 관련된 정보들</div>
       </div>
       <button
-        className="bg-[#444] text-white rounded-full w-[40px] h-[40px] flex self-center items-center justify-center active:bg-[#ef7d40cb]"
+        className="bg-[#444] text-white rounded-full w-[40px] h-[40px] flex self-center items-center justify-center active:bg-[#ef7d40]"
         onClick={() => routner.push('/home-guide')}>
         <img src="/right-arrow-w.svg" alt="right-arrow" className="w-[12px] h-[12px]" />
       </button>
@@ -50,7 +50,7 @@ export const MainPageComponent = () => {
         <p className="text-[11px] font-bold text-[#eb6530]">마초의 최애 인간이 되고 싶나요? 터치!</p>
       </div>
       <button
-        className="bg-[#ef7d40] text-white rounded-full w-[40px] h-[40px] flex items-center justify-center active:bg-[#ef7d40cb]"
+        className="bg-[#ef7d40] text-white rounded-full w-[40px] h-[40px] flex items-center justify-center active:bg-[#ef7d40]"
         onClick={() => routner.push('/fna')}>
         <img src="/right-arrow-w.svg" alt="right-arrow" className="w-[12px] h-[12px]" />
       </button>

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { MainLayout } from "@/layout/main-layout";
+import { Pretendard } from "@/public/fonts/fonts";
 
 export const metadata: Metadata = {
   title: "마초 가이드라인",
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`antialiased`}
+      className={`antialiased ${Pretendard.className}`}
     >
       <body>
         <MainLayout>
