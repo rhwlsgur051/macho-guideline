@@ -5,6 +5,9 @@ import { Pretendard } from "@/public/fonts/fonts";
 
 export const metadata: Metadata = {
   title: "마초 가이드라인",
+  formatDetection: {
+    address: false,
+  }
 };
 
 export const viewport: Viewport = {

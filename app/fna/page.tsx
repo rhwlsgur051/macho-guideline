@@ -34,7 +34,7 @@ const FnaPage = () => {
                 <li className="text-[#295771]">꼬리를 탁, 탁 내려치면 탐탁치 않다는 뜻이에요.</li>
                 <li className="text-[#295771]">얼굴을 당신에게 부딪히며 비비면 애교 부리는 거에요.</li>
                 <li className="text-[#295771]">갑자기 달려와서 발을 살짝 공격하면 기습놀이 하는거에요.</li>
-                <li className="text-[#295771]">멀리서 계속 감시한다면 관심 잇어서 지켜보는거에요.</li>
+                <li className="text-[#295771]">멀리서 계속 감시한다면 관심 있어서 지켜보는거에요.</li>
             </ul>
         </div>
 
@@ -55,7 +55,7 @@ const FnaPage = () => {
             <Image src={machoImg2} alt="fna" />
         </div>
 
-        <div className={`text-[#ef7d40] ${KNPSKKomi.className} text-[16px]`}>
+        <div className={`text-[#df4442] ${KNPSKKomi.className} text-[16px]`}>
             <p>사실은.. 이 모든 것들은 중요하지 않아요.</p>
             <p>당신이 마초를 위해 와줬다는 것만으로도 당신은 마초의 최애인간!!!</p>
             <p>마초의 기분이나 놀이는 전혀 중요하지 않아요. 와서 같이 있어주고</p>

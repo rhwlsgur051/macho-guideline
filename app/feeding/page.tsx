@@ -5,7 +5,7 @@ import { feedingListData } from "@/constants/listData"
 import { KNPSKKomi } from "@/public/fonts/fonts"
 
 const FeedingPage = () => {
-    return <div className="mb-4">
+    return <div className="mb-[60px]">
         {PageTitleComponent('마초의 식사를 챙겨줘', '사료 / 간식 / 물')}
         <div className="flex flex-col justify-center gap-8">
             <div>
@@ -53,7 +53,7 @@ const FoodBox = ({ keyName }: { keyName: keyof typeof feedingListData }) => {
             <div>
                 <ul className="text-[13px] mb-2">
                     {feedingListData[keyName].descList.map((line, i) => (
-                        <li key={i} className="font-bold">
+                        <li key={i} className="font-semibold">
                             <span className="mr-2">
                                 {String.fromCharCode(65 + i)}.
                             </span>
