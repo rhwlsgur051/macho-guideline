@@ -8,23 +8,26 @@ const HomeGuidePage = () => {
         {PageTitleComponent('내집이다~ 생각하고 사용해줘요!', '우리집 사용설명서')}
         <div className="flex flex-col gap-4 mb-4">
             <GuideBox title={'부천시 하우로 260 상우파크빌라 4층'} titleColor="#ef7d40">
-                <p className="font-semibold text-[14px]">현관 비밀번호 : 별도 안내</p>
+                <p className="font-semibold text-[14px] text-[#acadac]">현관 비밀번호 : 별도 안내</p>
                 <div className="text-[12px]">
                     <p>* 현관문이 헐거워요. 열고 닫을때 문을 밀었다 소리가 나면 작동해주세요.</p>
                     <p>* 내부 신발장은 사용하지 않아요. 문 밖에서 신발을 벗어주세요.</p>
                     <p>* 마초는 현관문이 열리면 뒷걸음질 치거나 도망가지만, 나가지 않게 주의!</p>
-                    <p>* 유사 시를 위해 빌라 1층 진입 시 공동 현관문을 닫고 올라가요!</p>
+                    <p>* 유사시를 위해 빌라 1층 진입 시 공동 현관문을 닫고 올라가요!</p>
                 </div>
             </GuideBox>
 
             <GuideBox title="마초 금지 구역" titleColor="#df4442">
-                <p className="font-semibold text-[14px]">화장실 / 옷방 베란다</p>
+                <p className="font-semibold text-[14px] text-[#acadac]">화장실 / 옷방 / 베란다</p>
                 <div className="text-[12px]">
                     <p><b>&#183; 항상 문을 닫아 주세요. 출입시에 마초가 빈틈을 노리고 있으니 주의!</b></p>
                     <p><b>&#183; 급히 닫다 마초가 끼이는것 보다 들어가게 두고 데리고 나오는게 좋아요.</b></p>
                     <p>* 옷방은 동행 하에 같이 들어가는건 괜찮아요. (옷방을 아주 좋아함)<br />
                         <span className="pl-[9px]">행거 안쪽이나 먼지가 많은 곳으로만 못가게 해주세요.<br />
-                            <span className="pl-[9px]">창문 열어주면 좋아해요.</span></span>
+                            <span className="pl-[9px]">
+                                창문 열어주면 좋아해요.
+                            </span>
+                        </span>
                     </p>
                 </div>
             </GuideBox>

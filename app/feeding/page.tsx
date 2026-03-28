@@ -93,7 +93,10 @@ const SnackBox = () => {
                 ))}
             </ul>
         </div>
-        <div>
+        <div className={`text-[#ef7d40] text-[15px] ${KNPSKKomi.className}`}>
+            * (위치) : 1회 섭취량
+        </div>
+        <div className="mt-[-10px]">
             <Image src={feedingListData.snack.image} alt={feedingListData.snack.title} />
         </div>
     </div>
