@@ -48,10 +48,10 @@ export const IntroPageComponent = () => {
                 <div className="text-white text-3xl">MACHO</div>
                 <div className="text-white text-1xl">Care Guide</div>
             </div>
-            <img src="/macho.png" alt="splash" className="max-w-none w-[480px] translate-x-[30px] translate-y-[-30px]" />
+            <img src="/images/intro/macho.png" alt="splash" className="max-w-none w-[480px] translate-x-[30px] translate-y-[-30px]" />
 
             {footprintList.map((footprint, index) => (
-                <img key={`footprint-` + index} src="/footprint.svg" alt="footprint" className={`absolute ${footprint.className}`} style={{ display: footprint.show ? 'block' : 'none' }} />
+                <img key={`footprint-` + index} src="/images/intro/footprint.svg" alt="footprint" className={`absolute ${footprint.className}`} style={{ display: footprint.show ? 'block' : 'none' }} />
             ))}
 
         </div>

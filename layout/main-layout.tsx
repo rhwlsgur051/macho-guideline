@@ -11,7 +11,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
         {children}
         {isDetailPage &&
             <button type="button" onClick={() => router.push('/main')} className="fixed top-8 right-6">
-                <img src="/home-icon.svg" alt="home" className="w-13 h-13" />
+                <img src="/images/home-icon.svg" alt="home" className="w-13 h-13" />
             </button>
         }
     </div>

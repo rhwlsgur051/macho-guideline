@@ -1,7 +1,7 @@
 import { PageTitleComponent } from "@/components/page-title-component"
 import Image from "next/image"
 
-import homeGuideImg from "@/public/home-guide/home-guide-img.png"
+import homeGuideImg from "@/public/images/home-guide/home-guide-img.png"
 
 const HomeGuidePage = () => {
     return <div className="mb-[60px]">

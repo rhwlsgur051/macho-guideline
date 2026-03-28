@@ -1,10 +1,10 @@
 import { PageTitleComponent } from "@/components/page-title-component"
 import { VideoBox } from "@/components/video-box"
 
-import fishImg from "@/public/playing/fishing.svg"
-import soccerImg from "@/public/playing/soccer.svg"
-import basketballImg from "@/public/playing/basketball.svg"
-import tagImg from "@/public/playing/tag.svg"
+import fishImg from "@/public/images/playing/fishing.svg"
+import soccerImg from "@/public/images/playing/soccer.svg"
+import basketballImg from "@/public/images/playing/basketball.svg"
+import tagImg from "@/public/images/playing/tag.svg"
 
 const PlayingPage = () => {
     return <div>

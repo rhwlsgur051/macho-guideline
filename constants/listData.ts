@@ -1,12 +1,12 @@
-import kibbleIcon from "@/public/feeding/kibble-icon.svg"
-import wetFoodIcon from "@/public/feeding/wet-icon.svg"
-import waterIcon from "@/public/feeding/water-icon.svg"
-import snackIcon from "@/public/feeding/snack-icon.svg"
+import kibbleIcon from "@/public/images/feeding/kibble-icon.svg"
+import wetFoodIcon from "@/public/images/feeding/wet-icon.svg"
+import waterIcon from "@/public/images/feeding/water-icon.svg"
+import snackIcon from "@/public/images/feeding/snack-icon.svg"
 
-import wetRightImg from "@/public/feeding/img2.png"
-import waterRightImg from "@/public/feeding/img3.png"
+import wetRightImg from "@/public/images/feeding/img2.png"
+import waterRightImg from "@/public/images/feeding/img3.png"
 
-import snackImg from "@/public/feeding/img4.png"
+import snackImg from "@/public/images/feeding/img4.png"
 
 export const feedingListData = {
     'kibble': {

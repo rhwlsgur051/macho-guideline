@@ -1,6 +1,6 @@
 import { PageTitleComponent } from "@/components/page-title-component"
 import Image from "next/image"
-import img1 from "@/public/feeding/img1.png"
+import img1 from "@/public/images/feeding/img1.png"
 import { feedingListData } from "@/constants/listData"
 import { KNPSKKomi } from "@/public/fonts/fonts"
 

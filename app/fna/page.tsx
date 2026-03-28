@@ -2,8 +2,8 @@ import { PageTitleComponent } from "@/components/page-title-component"
 import { KNPSKKomi } from "@/public/fonts/fonts"
 
 import Image from "next/image"
-import machoImg from "@/public/macho-3.png"
-import machoImg2 from "@/public/macho-4.png"
+import machoImg from "@/public/images/fna/macho-3.png"
+import machoImg2 from "@/public/images/fna/macho-4.png"
 
 const FnaPage = () => {
     return <div className="mb-[60px]">

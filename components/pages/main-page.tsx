@@ -12,7 +12,7 @@ export const MainPageComponent = () => {
 
     {/* 우리집 사용설명서 */}
     <div className="bg-[#aaa] p-4 pl-7 rounded-[14px] flex gap-4">
-      <img src="/main/home-w.svg" alt="macho-timetable" className="w-[60px]" />
+      <img src="/images/main/home-w.svg" alt="macho-timetable" className="w-[60px]" />
       <div className="flex flex-col justify-center mr-10">
         <div className="font-semibold text-[14px] text-[#444] mb-1">우리집 사용설명서</div>
         <div className="text-[10px] text-[#444]">지내는 동안 집에 관련된 정보들</div>
@@ -20,14 +20,14 @@ export const MainPageComponent = () => {
       <button
         className="bg-[#444] text-white rounded-full w-[40px] h-[40px] flex self-center items-center justify-center active:bg-[#ef7d40]"
         onClick={() => routner.push('/home-guide')}>
-        <img src="/right-arrow-w.svg" alt="right-arrow" className="w-[12px] h-[12px]" />
+        <img src="/images/right-arrow-w.svg" alt="right-arrow" className="w-[12px] h-[12px]" />
       </button>
     </div>
 
 
     {/* 시간표 */}
     <div className="relative">
-      <img src="/macho-timetable.svg" alt="macho-timetable" className="w-[100%]" />
+      <img src="/images/main/macho-timetable.svg" alt="macho-timetable" className="w-[100%]" />
       <button className="bg-white active:bg-[#666] active:text-white rounded-full absolute bottom-4 left-7 w-[76px] h-[34px] text-[12px] font-bold" onClick={() => routner.push('/timetable')}>
         보러가기
       </button>
@@ -42,7 +42,7 @@ export const MainPageComponent = () => {
 
     {/* 마초상식 */}
     <div className="flex items-center p-[8px] bg-[#fff7e1] gap-2 rounded-[10px]">
-      <img src="/main/macho-2.png" alt="macho-timetable" className="w-[100px]" />
+      <img src="/images/main/macho-2.png" alt="macho-timetable" className="w-[100px]" />
       <div>
         <p className="font-semibold text-[14px] mb-1">알아두면 쓸모있는 마초상식!</p>
         <p className="text-[11px] mb-2">마초가 무슨 말을 하고 있는 걸까?<br />
@@ -52,7 +52,7 @@ export const MainPageComponent = () => {
       <button
         className="bg-[#ef7d40] text-white rounded-full w-[40px] h-[40px] flex items-center justify-center active:bg-[#ef7d40]"
         onClick={() => routner.push('/fna')}>
-        <img src="/right-arrow-w.svg" alt="right-arrow" className="w-[12px] h-[12px]" />
+        <img src="/images/right-arrow-w.svg" alt="right-arrow" className="w-[12px] h-[12px]" />
       </button>
     </div>
   </div>
@@ -65,7 +65,7 @@ const MainHeader = () => {
       <p>우리집을 소개할게요!</p>
     </div>
     <div>
-      <img src="/guest/chang-su.svg" alt="guest" className="w-[60px]" />
+      <img src="/images/guest/chang-su.svg" alt="guest" className="w-[60px]" />
     </div>
   </div>
 }
