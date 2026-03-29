@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/PretendardVariable.woff2') format('woff2');
-  font-weight: 45 920;
-  font-display: swap;
-}
-
 body {
   background: #fff;
   color: #666;
