@@ -1,6 +1,9 @@
 'use client';
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import machoImg from "@/public/images/intro/macho.png"
+import footprintImg from "@/public/images/intro/footprint.svg"
 
 const defaultFootprintList = [
     {
@@ -49,10 +52,10 @@ export const IntroPageComponent = () => {
                 <div className="text-white text-3xl">MACHO</div>
                 <div className="text-white text-1xl">Care Guide</div>
             </div>
-            <img src="/images/intro/macho.png" alt="splash" className="max-w-none w-[480px] translate-x-[30px] translate-y-[-30px]" />
+            <Image src={machoImg} alt="splash" className="max-w-none w-[480px] translate-x-[30px] translate-y-[-30px]" />
 
             {footprintList.map((footprint, index) => (
-                <img key={`footprint-` + index} src="/images/intro/footprint.svg" alt="footprint" className={`absolute ${footprint.className}`} style={{ display: footprint.show ? 'block' : 'none' }} />
+                <Image key={`footprint-` + index} src={footprintImg} alt="footprint" className={`absolute ${footprint.className}`} style={{ display: footprint.show ? 'block' : 'none' }} />
             ))}
         </div>
 
