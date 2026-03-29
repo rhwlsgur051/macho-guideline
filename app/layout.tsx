@@ -4,9 +4,19 @@ import { MainLayout } from "@/layout/main-layout";
 import { Pretendard } from "@/public/fonts/fonts";
 
 export const metadata: Metadata = {
-  title: "마초 가이드라인",
+  title: "마초 돌봄 설명서",
   formatDetection: {
     address: false,
+  },
+  openGraph: {
+    title: "마초 돌봄 설명서",
+    description: "마초에 대한 모든것",
+    siteName: "마초 돌봄 설명서",
+    images: [
+      {
+        url: "https://7ca1-112-147-117-52.ngrok-free.app/images/og-image.jpg",
+      },
+    ],
   }
 };
 

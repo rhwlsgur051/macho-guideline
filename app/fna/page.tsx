@@ -11,7 +11,9 @@ const FnaPage = () => {
 
         <div className="flex justify-between">
             <div>
-                <p className={`${KNPSKKomi.className} text-[#ef7d40] text-[20px] font-bold`}>마초와 처음 마주친 순간!</p>
+                <p className={`${KNPSKKomi.className} text-[#ef7d40] text-[20px] font-bold`}>
+                    마초와 처음 마주친 순간!
+                </p>
                 <ul className="list-disc list-inside text-[11px] font-bold">
                     <li>고양이는 조용하고 차분한 사람을 좋아해요.</li>
                     <li>처음에는 다가가지 말고 거리를 두고 인사해주세요.</li>
@@ -25,7 +27,29 @@ const FnaPage = () => {
         </div>
 
         <div className="relative mt-[-30px] mb-[20px]">
-            <p className={`${KNPSKKomi.className} text-[#ef7d40] text-[20px] font-bold`}>마초가 뭐라고 하는 거지?</p>
+            <p className={`${KNPSKKomi.className} text-[#ef7d40] text-[20px] font-bold`}>
+                &#8251; 주의사항
+            </p>
+            <ul className="list-disc list-inside text-[11px] font-bold">
+                <li>
+                    끈, 고무줄, 비닐 등 작은 물건은 삼키지 않게 주의해주세요.
+                </li>
+                <li>
+                    초콜릿, 건포도, 마늘, 파 등의 음식은 마초가 절대 먹지못하게 해주세요!
+                </li>
+                <li>
+                    문을 여닫을때 마초가 끼이지 않게 주의해주세요.
+                </li>
+                <li>
+                    마초는 항상 사람 근처에 있어요. 밟지 않게 주의해주세요.
+                </li>
+            </ul>
+        </div>
+
+        <div className="mb-[20px]">
+            <p className={`${KNPSKKomi.className} text-[#ef7d40] text-[20px] font-bold`}>
+                마초가 뭐라고 하는 거지?
+            </p>
             <ul className="list-disc list-inside text-[11px] font-bold">
                 <li>다가와서 울기 시작하면 일어나서 따라가보세요.</li>
                 <li>옷방 문앞에서 울면 &gt; 놀고 싶어 or 옷방에 들어가고 싶어</li>
@@ -39,7 +63,9 @@ const FnaPage = () => {
         </div>
 
         <div className="mb-[8px]">
-            <p className={`${KNPSKKomi.className} text-[#ef7d40] text-[20px] font-bold`}>마초의 TV시청</p>
+            <p className={`${KNPSKKomi.className} text-[#ef7d40] text-[20px] font-bold`}>
+                마초의 TV시청
+            </p>
             <ul className="list-disc list-inside text-[11px] font-bold">
                 <li>고양이들이 창밖을 바라보는 것은 사람이 TV보는거와 같아요.</li>
                 <li>햇살이 들어오는 낮시간에 창문을 열어주면 좋아해요.</li>
