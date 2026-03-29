@@ -8,7 +8,7 @@ export const Pretendard = localFont({
 });
 
 export const KNPSKKomi = localFont({
-    src: './KNPSKKomi.otf',
+    src: './KNPSKkomi.otf',
     weight: "45 920",
     style: 'normal',
     display: 'swap',
