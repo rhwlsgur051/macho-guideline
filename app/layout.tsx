@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "마초 돌봄 설명서",
     images: [
       {
-        url: "https://7ca1-112-147-117-52.ngrok-free.app/images/og-image.jpg",
+        url: "https://rhwlsgur051.github.io/macho-guideline/images/og-image.jpg",
       },
     ],
   }
